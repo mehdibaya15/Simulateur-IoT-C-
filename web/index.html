@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AP4A - Qualité de l'air</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Qualité de l'air</h1>
+      <p class="subtitle">Simulateur IoT · AP4A</p>
+    </div>
+    <div class="status"><span class="dot" id="dot"></span><span id="status">En attente du simulateur…</span></div>
+  </header>
+
+  <section class="progress">
+    <div class="progress-info"><span id="tick">Tick 0 / 0</span><span id="measures">0 mesure</span></div>
+    <div class="track"><div class="fill" id="progress"></div></div>
+  </section>
+
+  <main id="grid" class="grid"></main>
+
+  <section class="recent">
+    <h2>Dernières mesures</h2>
+    <ul id="recent"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
